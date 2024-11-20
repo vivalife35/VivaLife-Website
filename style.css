@@ -30,6 +30,24 @@
     margin-top: 10px;
 }
 
+.mission {
+    background-color: #d5ebf0; 
+    padding: 50px;
+}
+
+.vission {
+    background-color: #d5ebf0; 
+    padding: 50px;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    align-items: center;     
+    height: 100vh;           
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -48,4 +66,85 @@ body {
 .content {
     flex-grow: 1;
     padding: 20px;
+}
+
+.footer {
+    background-color: #646262;
+    color: white;
+    padding: 60px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px; 
+    padding: 0 20px;
+}
+
+.footer-content p {
+    font-size: 18px;
+}
+
+.footer-content nav ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    padding: 0;
+}
+
+.footer-content nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.footer-content nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+.social-icons {
+    display: flex;
+    gap: 15px; 
+    justify-content: center;
+}
+
+.social-icon {
+    color: white;
+    font-size: 20px;
+    transition: color 0.3s ease; 
+}
+
+.social-icon:hover {
+    color: #1da1f2;
+}
+
+
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 20px;
+    }
+
+    .footer-content p {
+        font-size: 16px;
+    }
+
+    .footer-content nav ul li a {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding: 20px 0;
+    }
+
+    .social-icons {
+        gap: 10px;
+    }
 }
