@@ -148,3 +148,107 @@ body {
         gap: 10px;
     }
 }
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+
+.navbar {
+    background-color: #007bff;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: rgb(10, 10, 10);
+}
+
+.navbar-nav .nav-link {
+    color: rgb(11, 11, 11) !important;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #07d269 !important;
+}
+
+.about-us {
+    background-image: url('image/clean-medical-background_53876-116875.avif'), url('image/clean-medical-background_53876-116875.jpg');
+    background-size: cover;
+    background-position: center center;
+    padding: 100px 0;
+}
+
+.about-us .title {
+    font-size: 36px;
+    font-weight: 600;
+    color: #0056b3;
+}
+
+.about-us .description {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #000000;
+}
+
+.footer {
+    background-color: #343a40;
+    color: white;
+}
+
+.footer-content p {
+    margin: 0;
+    font-size: 16px;
+}
+
+.footer nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer nav ul li {
+    display: inline;
+    margin-right: 15px;
+}
+
+.footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer nav ul li a:hover {
+    color: #07d269;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #07d269;
+}
+
+
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+
+@media (max-width: 768px) {
+    .about-us .title {
+        font-size: 28px;
+    }
+
+    .about-us .description {
+        font-size: 16px;
+    }
+
+    .footer-content {
+        padding: 20px;
+    }
+}
+
+
