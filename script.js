@@ -19,4 +19,20 @@ function calculateProgress() {
         <p>Sleep Hours: ${sleep}h (${sleepProgress}%)</p>
         <div class="progress-bar" style="width: ${sleepProgress}%; background-color: ${sleepProgress >= 100 ? 'green' : 'red'};"></div>
     `;
+
+    let motivationalHTML = "";
+    if (water < waterGoal) {
+        motivationalHTML += `<p class="motivation-msg"><strong>You're doing great! Try to drink a bit more water to hit your goal.</strong></p>`;
+    }
+    if (steps < stepsGoal) {
+        motivationalHTML += `<p class="motivation-msg"><strong>Keep moving! A few more steps and you'll hit your target!</strong></p>`;
+    }
+    if (sleep < sleepGoal) {
+        motivationalHTML += `<p class="motivation-msg"><strong>Try to rest a bit more for a healthier sleep pattern.</strong></p>`;
+    }
+
+    
+    if (water >= waterGoal && steps >= stepsGoal && sleep >= sleepGoal) {
+        motivationalHTML += "<p class='motivation-msg success'><strong>Great job! You hit all your goals today!</strong></p>";
+    }
 }
