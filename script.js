@@ -35,4 +35,6 @@ function calculateProgress() {
     if (water >= waterGoal && steps >= stepsGoal && sleep >= sleepGoal) {
         motivationalHTML += "<p class='motivation-msg success'><strong>Great job! You hit all your goals today!</strong></p>";
     }
+
+    document.getElementById("progress").innerHTML = progressHTML;
 }
