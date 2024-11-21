@@ -37,4 +37,5 @@ function calculateProgress() {
     }
 
     document.getElementById("progress").innerHTML = progressHTML;
+    document.getElementById("motivationalMessages").innerHTML = motivationalHTML;
 }
